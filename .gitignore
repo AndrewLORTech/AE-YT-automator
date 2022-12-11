@@ -1,0 +1,5 @@
+secrets.py
+.venv
+node_modules
+__pycache__
+nexrender-cli-win64.exe
