@@ -27,7 +27,7 @@ def DownloadVideo(link):
 
 link = 'https://www.youtube.com/watch?v=' + videoId
 
-files = os.listdir('D:\\Projects\\Python\\AE-YT-automator')
+files = os.listdir(folder)
 file = ''
 for filename in files:
     if filename.endswith('.mp4'):
@@ -38,10 +38,10 @@ if os.path.exists(title) and title == file:
 else:
     DownloadVideo(link)
 
-if os.path.exists('Footage/audio.mp4'):
-    os.remove('Footage/audio.mp4')
-    os.rename(title, 'Footage/audio.mp4')
+if os.path.exists(audio_file):
+    os.remove(audio_file)
+    os.rename(title, audio_file)
 else:
-    os.rename(title, 'Footage/audio.mp4')
+    os.rename(title, audio_file)
     
 # Todo Upload video to YouTube using Youtube Data API
