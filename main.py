@@ -43,5 +43,13 @@ if os.path.exists(audio_file):
     os.rename(title, audio_file)
 else:
     os.rename(title, audio_file)
+
+newTitle = data['items'][0]['snippet']['title'].replace("&amp;", "&")
+newTitle = newTitle.replace("[NCS Release]", "")
+
+command = f'python youtube.py --file="result.mp4" --title="{newTitle}" --description="{newTitle}" --category="22" --privacyStatus="private"'
     
-# Todo Upload video to YouTube using Youtube Data API
+if os.path.exists('result.mp4'):
+    os.system(f'cmd /k "{command}"')
+else:
+    pass
