@@ -1,11 +1,11 @@
 {
     "template": {
-        "src": "file:///D:/Projects/Python/AE-automator/Template.aep",
+        "src": "file:///D:/Projects/Python/AE-YT-automator/Template.aep",
         "composition": "main"
     },
     "assets": [
         {
-            "src": "file:///D:/Projects/Python/AE-automator/Footage/audio.mp4",
+            "src": "file:///D:/Projects/Python/AE-YT-automator/Footage/audio.mp4",
             "type": "audio",
             "layerName": "[audio].mp4"
         }
@@ -21,7 +21,7 @@
             {
                 "module": "@nexrender/action-copy",
                 "input": "encoded.mp4",
-                "output": "D:/Projects/Python/AE-automator/video.mp4"
+                "output": "D:/Projects/Python/AE-YT-automator/video.mp4"
             }
         ]
     }
